@@ -1,0 +1,17 @@
+cfg_path: sample.yaml
+data:
+  dataset: custom_dataset.py
+  data_root: /path/to/data/where/dataset/root/folder/locates
+  train_dir: train
+  test_dir: test
+  img_resize: 480
+  img_resize_center: [1250,400]
+  color_depth: 1
+
+train:
+  device: 0 # 0 or [0,1,2] device numbers
+  epochs: [3,5,10] # will iterate training if list of int
+  batch_size: [16,32] # will iterate training if list of int
+  learning_rate: 0.00001
+  optim: adam
+
